@@ -1,0 +1,15 @@
+{
+  "name": "method-visu",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "echarts": "6.0.0"
+  },
+  "devDependencies": {
+    "concat-with-sourcemaps": "1.0.7",
+    "source-map-loader": "2.0.0",
+    "typescript": "6.0.2",
+    "esbuild": "0.28.2"
+  }
+}

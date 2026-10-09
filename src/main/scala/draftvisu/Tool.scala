@@ -23,9 +23,8 @@ import scala.scalajs.js.JSConverters.*
 import com.raquo.laminar.api.L.{*, given}
 import com.raquo.laminar.api.features.unitArrows
 import org.scalajs.dom
-import typings.plotlyJs.anon.*
-import typings.plotlyJs.mod.DownloadImgopts
-import typings.plotlyJs.mod.{downloadImage}
+//import typings.plotlyJs.mod.DownloadImgopts
+//import typings.plotlyJs.mod.{downloadImage}
 
 import scala.annotation.tailrec
 import scala.concurrent.Future
@@ -39,6 +38,7 @@ object Tool:
     val index = math.ceil((percentile / 100) * sortedData.length).toInt - 1
     sortedData(index)
 
+    /*
   def downloadSVGButton(tag: String) =
     button(
       "SVG",
@@ -47,7 +47,7 @@ object Tool:
         downloadImage(tag, opt)
         ()
       }
-    )
+    )*/
 
   def fetchFiles(url: String*): Signal[Option[Seq[String]]] =
     def fut: Future[Seq[String]] =
